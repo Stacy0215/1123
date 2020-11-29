@@ -26,6 +26,18 @@
 			justify-content: center;
 			align-items: center;
 		}
+		.X1{
+			position: fixed;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 10;
+			background:  rgba(0,0,0,0.5);
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+		}
 
 
 	</style>
@@ -35,14 +47,22 @@
 	<h1>智慧型客語機器人</h1>
 	<div class="zenbo">
 		<img src="1.jpg">
+	<div class="X" >
+		<img src="X.png" width="100" height="100">
 	</div>
 
 	<script type="text/javascript">
 		$('p').click(function(){
 			$('.zenbo').slideToggle();
 		});
+		$('p').click(function(){
+			$('.X').slideToggle();
+		});
 		$('img').click(function(){
 			$('.zenbo').slideToggle();
+		});
+		$('img').click(function(){
+			$('.X').slideToggle();
 		});
 	</script>
 </body>
